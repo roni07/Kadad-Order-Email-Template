@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <img src="https://drive.google.com/uc?export=view&id=1rcxWYF8IichPSeLXeiW7je5amF6a74vg" alt="" width="100%"
+            height="161" />
+        <p style="padding: 0 20px;">{{{date}}}</p>
+    </div>
+    <div style="padding: 0 20px 20px 20px;">
+        <p><span style="font-size: 14pt;"> <span style="font-size: 24px;">Hi, {{{customer_name}}}</span></span></p>
+        <p><span style="font-size: 14pt;"> <span style="font-size: 24px;">Thanks for Order,</span> </span></p>
+        <p style="margin-bottom: 0;">
+            <span style="font-size: 14pt;">
+                We hope your package delivered safely and
+            </span>
+        </p>
+        <p style="margin-top: 10px; margin-bottom: 0;">
+            <span style="font-size: 14pt;"> your order number is {{{order_id}}}
+            </span>
+        </p>
+    </div>
+    <div style="padding: 20px; background-color: #ececec;">
+        <div style="display: flex; justify-content: space-between; font-size: 18pt;">
+            <p>Total Amount You Paid</p>
+            <p>QAR {{{price}}}</p>
+        </div>
+        <hr />
+        <div style="display: flex; justify-content: space-between; font-size: 18pt;">
+            <p>Trip fare</p>
+            <p>QAR {{{price}}}</p>
+        </div>
+        <hr />
+        <div style="display: flex; justify-content: space-between; font-size: 18pt;">
+            <p>Discount coupon {{{coupon_code}}}</p>
+            <p>QAR {{{price}}}</p>
+        </div>
+        <hr />
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+        <div>
+            <p style="font-size: 20px;">Payment Method</p>
+            <div style="display: flex; align-items: center;">
+                <img src="https://drive.google.com/uc?export=view&id=1jKaa-NSbls9o2MwNPo9ahQDL2WBcRllH" alt=""
+                    width="50" height="50" />
+                <div style="margin-left: 15px;">
+                    <p style="margin: 0;">Debit Card</p>
+                    <p style="margin: 3px 0 0 0;">3:16 PM 22/14/1</p>
+                </div>
+            </div>
+        </div>
+        <p style="margin: 0; font-weight: bold;">QAR {{{price}}}</p>
+    </div>
+    <p style="padding: 0 20px;">
+        This is a generated Invoice/Receipt Email for Kadad Delivery Systems.
+    </p>
+    <p style="padding: 0 20px;">Download <span style="color: red;"> PDF </span></p>
+    <!--order part-->
+    <div
+        style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; background-color: #ececec; padding: 30px 20px; height: 200px;">
+        <div>
+            <p style="font-size: 40px; font-weight: 400; margin: 0;">Delivery with</p>
+            <div>
+                <div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;"><img
+                        style="height: 60px; width: 60px; margin-bottom: auto; margin-top: auto;"
+                        src="https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-on-transparent-vector-id1313958250?k=20&amp;m=1313958250&amp;s=612x612&amp;w=0&amp;h=vCvfwHB-pUpqWoB7wT2ifkKEL1qa5lhxxUPLIsgER00="
+                        alt="" />
+                    <p style="color: gray; font-size: 30px; font-weight: 200; margin-bottom: 10px; margin-top: 10px;">
+                        {{{driver_name}}}</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <p style="font-size: 20px; font-weight: 200; margin-bottom: 2px; margin-top: 2px;">4.87</p>
+                    <img style="height: 20px; width: 80px; margin-bottom: auto; margin-top: auto;"
+                        src="https://www.seekpng.com/png/full/104-1046661_5-star-rating-4-1-2-stars.png" alt="" />
+                    <p style="font-size: 20px; font-weight: 200; margin-bottom: 2px; margin-top: 2px;">Rating</p>
+                </div>
+                <p>License Plate: {{{license_plate}}}</p>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;"><button
+                style="color: #ececec; background-color: black; border: none; padding: 10px 20px; border-radius: 5px;">
+                RATE ORDER </button>
+            <p>Pick Up &amp; Delivery</p>
+            <div style="display: flex; gap: 20px;"><img style="width: 100px; height: 100px;"
+                    src="https://i.fbcd.co/products/resized/resized-750-500/6f2345032c698b53fe63513729ebe849c89c5d8682ce78cc2e645ee5914238d6.jpg"
+                    alt="" />
+                <div>
+                    <p>Documents</p>
+                    <p>Total Distance: <span style="color: gray;">{{{2.83km}}}</span></p>
+                    <p>Time: <span style="color: #808080;">{{{</span><span style="color: gray;">12 mins}}}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--order timeline-->
+    <div style="position: relative;">
+        <div style="display: flex; justify-content: space-between; padding: 50px 50px;">
+            <div>
+                <p style="font-size: 20px; margin-top: 0">Order Number: <span style="color: gray;">{{{6198934}}}</span></p>
+                <div>
+                    <h3 style="margin: 0;">Pickup Location</h3>
+                    <div style="display: flex; gap: 5px;">
+                        <p
+                            style="color: #ececec; background-color: gray; padding: 2px 15px; border-radius: 5px; margin: 5px 0;">
+                            Home</p>
+                        <p style="margin-bottom: auto; margin-top: auto;">3:05 PM</p>
+                    </div>
+                    <p style="color: gray; margin: 5px 0;">{{{address_1}}}</p>
+                    <p style="color: gray; margin: 5px 0;">{{{mob_number}}}</p>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 0;">Drop off Location</h3>
+                    <div style="display: flex; gap: 5px;">
+                        <p
+                            style="color: #ececec; background-color: gray; padding: 2px 15px; border-radius: 5px; margin: 5px 0;">
+                            Home</p>
+                        <p style="margin-bottom: auto; margin-top: auto;">3:05 PM</p>
+                    </div>
+                    <p style="color: gray; margin: 5px 0;">{{{address_1}}}</p>
+                    <p style="color: gray; margin: 5px 0;">{{{mob_number}}}</p>
+                </div>
+            </div>
+            <div><img style="height: 500px; width: 400px;"
+                    src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg"
+                    alt="" /></div>
+        </div>
+        <div style="position: absolute; top: 24%; left: 1%; transform: translate(-40%,-1%);">
+            <p
+                style="background-color: white; border-radius: 50%; height: 20px; width: 20px; border: 2px solid #f69c12; margin: 0;">
+                &nbsp;</p>
+            <p style="height: 100px; border-left: 2px solid #f69c12; margin: 0px 10px;">&nbsp;</p>
+            <p style="background-color: #f69c12; height: 20px; width: 20px; margin: 0;">&nbsp;</p>
+        </div>
+    </div>
+    <!--report div-->
+    <div
+        style="display: flex; justify-content: space-between; align-items: center; padding: 40px 100px; background-color: #f69c12;">
+        <div style="display: flex; align-items: center; gap: 40px;">
+            <button
+                style="color: #ececec; background-color: black; border: none; padding: 10px 20px; border-radius: 5px; width: 200px; height: 45px;">
+                Report </button>
+            <button
+                style="color: #ececec; background-color: black; border: none; padding: 10px 20px; border-radius: 5px; width: 200px; height: 45px;">
+                My Orders </button>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <h1 style="color: #ececec; font-weight: 300;">Follow Us :</h1>
+            <img style="height: 50px; width: 50px; margin-bottom: auto; margin-top: auto; border-radius: 50%;"
+                src="https://e7.pngegg.com/pngimages/201/462/png-clipart-computer-icons-facebook-facebook-logo-black-and-white.png"
+                alt="" /> <img
+                style="height: 50px; width: 50px; margin-bottom: auto; margin-top: auto; border-radius: 50%;"
+                src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Instagram-logo-transparent-PNG.png"
+                alt="" />
+        </div>
+    </div>
+    <div style="padding: 10px 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <img style="font-size: 24px; float: left;"
+                    src="https://www.kadad.com/wp-content/uploads/2021/01/kadad-icon-02.png" alt="" width="161"
+                    height="161" />
+            </div>
+            <div style="display: flex; align-items: center;"><img style="width: 100%; height: 80px;"
+                    src="https://drive.google.com/uc?export=view&amp;id=1gecGgaCQ_08rXlbp7CBBl7zfzsPOLPbE" alt="" />
+                <img style="width: 100%; height: 54px;"
+                    src="https://drive.google.com/uc?export=view&amp;id=1uwl4iN2BQhzcMSyyb6quv78ftXXrt64T" alt="" />
+            </div>
+        </div>
+        <hr />
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <p><a style="color: #000;" href="gogole.com">About Us</a></p>
+                <p><a style="color: #000;" href="gogole.com">Contact Us</a></p>
+                <p><a style="color: #000;" href="gogole.com">Privacy Policy</a></p>
+                <p><a style="color: #000;" href="gogole.com">Terms and Condition</a></p>
+            </div>
+            <div>
+                <p>Partners &amp; Partners,</p>
+                <p>238 C - Ring Road,</p>
+                <p>Ground Floor,</p>
+                <p>Door A, Doha, Qatar</p>
+            </div>
+        </div>
+    </div>
+    <p>
+        <img style="width: 100%; height: 200px;"
+            src="https://drive.google.com/uc?export=view&amp;id=1ezGmn5yeLICvVBHj29GvN2LzQZUsrCy1" alt="" />
+    </p>
+</body>
+
+</html>
