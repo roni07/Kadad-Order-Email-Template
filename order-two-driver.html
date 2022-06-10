@@ -12,33 +12,32 @@
 <table style="width: 100%;">
     <tr>
         <td>
-            <img src="https://drive.google.com/uc?export=view&id=1rcxWYF8IichPSeLXeiW7je5amF6a74vg" alt="" width="100%"
-                 height="200"/>
+            <img style="float: left;"
+                 src="https://drive.google.com/uc?export=view&amp;id=1xP3HQgT9rDMTfxvaZV6lx3ZUT0DHt6KD" alt=""
+                 width="161" height="161"/>
         </td>
-    </tr>
-    <tr>
-        <td>
-            <b style="padding: 0 20px">{{{order_date}}}</b>
+        <td style="text-align: right; padding-right: 40px;">
+            <b>{{{order_date}}}</b>
         </td>
     </tr>
 </table>
-<table style="width: 100%; padding: 0 20px 20px 20px;">
+<table style="width: 100%; padding: 20px;">
     <tr>
         <td style="padding: 10px 0;">
-            <b style="font-size: 20px;">Hi, {{{customer_name}}}</b>
-            <p><b style="font-size: 20px;">Thanks for Order</b></p>
-            <p>We hope your package delivered safely and</p>
-            <p style="margin-bottom: 0">your order number is <b>{{{order_id}}}</b></p>
+            <b style="font-size: 20px;">Hi, {{{driver_name}}}</b>
+            <p><b style="font-size: 20px;">Thanks for Deliver</b></p>
+            <p>We hope you reach for kadad customer package</p>
+            <p style="margin-bottom: 0">safely and your order number is <b>{{{order_id}}}</b></p>
         </td>
     </tr>
 </table>
 <table style="width: 100%; padding: 20px; background-color: #ececec;">
     <tr>
         <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            Total Amount You Paid
+            Total Amount You Earn
         </td>
         <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            QAR <b>{{{total_paid_amount}}}</b>
+            QAR <b>{{{driver_earning}}}</b>
         </td>
     </tr>
     <tr>
@@ -54,33 +53,17 @@
             Discount Coupon <b>{{{discounted_price}}}</b>
         </td>
         <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            QAR <b>{{{discount_price}}}</b>
+            QAR <b>{{{driver_earning}}}</b>
         </td>
     </tr>
 </table>
 <table style="width: 100%; padding: 0 20px;">
     <tr>
-        <td style="text-align: left; padding: 10px 0 0 0; font-size: 20px; width: 50%">
-            Payment Method
+        <td style="text-align: left; padding: 10px 0; font-size: 20px; width: 50%">
+            Congratualtion! You have Earn today
         </td>
-        <td style="text-align: right; padding: 10px 0 0 0; font-size: 20px; width: 50%">
-            QAR <b>{{{total_price}}}</b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <td>
-                        <img src="https://drive.google.com/uc?export=view&id=1jKaa-NSbls9o2MwNPo9ahQDL2WBcRllH" alt=""
-                             width="50" height="50"/>
-                    </td>
-                    <td>
-                        <p style="margin: 0;">Debit Card</p>
-                        <p style="margin: 3px 0 0 0;">3:16 PM 22/14/1</p>
-                    </td>
-                </tr>
-            </table>
+        <td style="text-align: right; padding: 10px 0; font-size: 20px; width: 50%">
+            QAR <b>{{{order_total_earning}}}</b>
         </td>
     </tr>
     <tr>
@@ -92,12 +75,13 @@
 </table>
 <table style="width: 100%; padding: 20px; background-color: #ececec;">
     <tr>
-        <td style="font-size: 35px;">Delivery with</td>
+        <td style="font-size: 35px;">Order for</td>
         <td style="text-align: right;">
-            <button style="padding: 10px 18px; background-color: #000; border: none; color: #fff; border-radius: 6px;">
+            <button
+                    style="padding: 10px 18px; background-color: #000; border: none; color: #fff; border-radius: 6px;">
                 RATE ORDER
             </button>
-            <p style="margin-bottom: 0">Pick Up & Deliver</p>
+            <p style="margin-bottom: 0;">Pick Up & Deliver</p>
         </td>
     </tr>
     <tr>
@@ -146,12 +130,10 @@
                     </td>
                     <td style="text-align: left;">
                         <p style="margin: 0 0 3px 10px;">Documents</p>
-                        <p style="margin: 3px 0 3px 10px;">
-                            Total Distance: <span style="color: #808080">{{{order_total_distance}}}</span>
-                        </p>
-                        <p style="margin: 3px 0 0 10px;">
-                            Time: <span style="color: #808080">{{{expected_delivery_time}}}</span>
-                        </p>
+                        <p style="margin: 3px 0 3px 10px;">Total Distance: <span
+                                style="color: #808080">{{{order_total_distance}}}</span></p>
+                        <p style="margin: 3px 0 0 10px;">Time: <span
+                                style="color: #808080">{{{expected_delivery_time}}}</span></p>
                     </td>
                 </tr>
             </table>
@@ -170,9 +152,10 @@
                 <tr>
                     <td style="vertical-align: top">
                         <p style="background-color: white; border-radius: 50%; height: 20px; width: 20px; border: 2px solid #f69c12; margin: 0;">
-                            &nbsp;
-                        </p>
-                        <p style="height: 100px; border-left: 2px solid #f69c12; margin: 0px 10px;">&nbsp;</p>
+                            &nbsp;</p>
+                        <p style="height: 92px; border-left: 2px solid #f69c12; margin: 0 10px;">&nbsp;</p>
+                        <p style="height: 20px; width: 20px; margin: 0; border: 1px solid #f69c12">&nbsp;</p>
+                        <p style="height: 90px; border-left: 2px solid #f69c12; margin: 0 10px;">&nbsp;</p>
                         <p style="background-color: #f69c12; height: 20px; width: 20px; margin: 0;">&nbsp;</p>
                     </td>
                     <td>
@@ -185,6 +168,14 @@
                         <p style="color: gray; margin: 5px 0;">{{{pick_mobile}}}</p>
 
                         <h3 style="margin-bottom: 0;">Drop off Location</h3>
+                        <button
+                                style="color: #ececec; border: none; background-color: gray; padding: 2px 15px; border-radius: 5px;">
+                            Home
+                        </button>
+                        <p style="color: gray; margin: 5px 0;">{{{drop_address}}}</p>
+                        <p style="color: gray; margin: 5px 0;">{{{drop_mobile}}}</p>
+
+                        <h3 style="margin-bottom: 0;">Drop off Location Two</h3>
                         <button
                                 style="color: #ececec; border: none; background-color: gray; padding: 2px 15px; border-radius: 5px;">
                             Home
@@ -288,7 +279,7 @@
 </table>
 
 <img style="width: 100%; height: 200px;"
-     src="https://drive.google.com/uc?export=view&amp;id=1ezGmn5yeLICvVBHj29GvN2LzQZUsrCy1" alt=""/>
+     src="https://drive.google.com/uc?export=view&amp;id=1OQcEUQsqx6HYD5ZDzRvaPOwuVHd4Nhnb" alt=""/>
 
 </body>
 
