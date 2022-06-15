@@ -1,151 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-<body style="font-family: 'Roboto', sans-serif;">
-<table style="width: 100%; padding: 5px 20px">
-    <tr>
-        <td>
-            <p style="margin-bottom: 3px; color: gray">Date: Jan-16-2022</p>
-            <b>Invoice | Receipt</b>
-        </td>
-        <td style="text-align: right;">
-            <img style="height: 35px;"
-                 src="https://drive.google.com/uc?export=view&amp;id=1xIUryiau2B8Tp3BOq5QqiMrDnMVeS0ht" alt=""/>
-        </td>
-    </tr>
-</table>
-<table style="width: 100%; padding: 5px 20px; color: gray; font-size: 14px">
-    <tr>
-        <td>[Customer Name]</td>
-        <td style="text-align: right">Partners & Partners,</td>
-    </tr>
-    <tr>
-        <td>[Customer Mobile Number]</td>
-        <td style="text-align: right">238 C - Ring Road,</td>
-    </tr>
-    <tr>
-        <td>[Customer Email]</td>
-        <td style="text-align: right">Ground Floor,</td>
-    </tr>
-    <tr>
-        <td>Order Number: [1245]</td>
-        <td style="text-align: right">Door A, Doha, Qatar.</td>
-    </tr>
-</table>
-<table style="width: 100%; padding: 5px 20px; color: gray">
-    <tr>
-        <td>
-            <table style="width: 100%; border-collapse: collapse">
-                <tr style="border-bottom: 1px solid gray">
-                    <td style="padding: 5px 0; width: 50%">Total Amount You Paid</td>
-                    <td style="text-align: right; padding: 5px 0; width: 50%">QAR 10.09</td>
-                </tr>
-                <tr style="border-bottom: 1px solid gray">
-                    <td>
-                        <p style="margin-bottom: 4px">Base Fare</p>
-                        <p style="margin-top: 4px">Total Distance [Kilometers]</p>
-                    </td>
-                    <td style="text-align: right;">QAR 10.09</td>
-                </tr>
-                <tr style="border-bottom: 1px solid gray">
-                    <td style="padding: 10px 0">
-                        Discount Coupon [Coupon Code]
-                    </td>
-                    <td style="text-align: right; padding: 10px 0">QAR 0.00</td>
-                </tr>
-                <tr style="border-bottom: 1px solid gray">
-                    <td>
-                        <p style="margin-bottom: 0">Payment Method</p>
-                        <p style="margin: 4px 0 3px 0">Debit card</p>
-                        <p style="margin-top: 3px; font-size: 12px">PM 3:16 1/4/22</p>
-                    </td>
-                    <td style="text-align: right;">
-                        <b style="color: #000">QAR 10.09 </b>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
 
-<table style="width: 100%; padding: 0 20px">
-    <tr>
-        <td>
-            <table style="width: 100%; border-collapse: collapse">
-                <tr>
-                    <td style="width: 100%; padding-bottom: 5px;">
-                        <b>Delivery with</b> <span style="color: gray">[Driver Name]</span>
-                    </td>
-                </tr>
-                <tr style="border-bottom: 1px solid gray; color: gray">
-                    <td style="width: 100%; padding-bottom: 10px">
-                        <b style="color: #000; font-size: 13px">Pick Up & Delivery |</b>
-                        <span style="font-size: 12px">Documents <b style="color: #000">|</b></span>
-                        <span style="font-size: 12px">Total Distance: 2.83 km <b style="color: #000">|</b></span>
-                        <span style="font-size: 12px">Time: 20 mins</span>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+<body style="font-family: 'Roboto', sans-serif">
+    <table style="width: 100%; padding: 5px 20px">
+        <tr>
+            <td>
+                <p style="margin-bottom: 3px; color: gray">
+                    Date: {{{orderDate}}}
+                </p>
+                <b>Invoice | Receipt</b>
+            </td>
+            <td style="text-align: right">
+                <img style="height: 35px"
+                    src="https://drive.google.com/uc?export=view&amp;id=1xIUryiau2B8Tp3BOq5QqiMrDnMVeS0ht" alt="" />
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%; padding: 5px 20px; color: gray; font-size: 14px">
+        <tr>
+            <td>{{{customerName}}}</td>
+            <td style="text-align: right">Partners & Partners,</td>
+        </tr>
+        <tr>
+            <td>{{{customerMobileName}}}</td>
+            <td style="text-align: right">238 C - Ring Road,</td>
+        </tr>
+        <tr>
+            <td>{{{customerEmail}}}</td>
+            <td style="text-align: right">Ground Floor,</td>
+        </tr>
+        <tr>
+            <td>Order Number: {{{orderUniqueId}}}</td>
+            <td style="text-align: right">Door A, Doha, Qatar.</td>
+        </tr>
+    </table>
+    <table style="width: 100%; padding: 5px 20px; color: gray">
+        <tr>
+            <td>
+                <table style="width: 100%; border-collapse: collapse">
+                    <tr style="border-bottom: 1px solid gray">
+                        <td style="padding: 5px 0; width: 50%">
+                            Total Amount You Paid
+                        </td>
+                        <td style="
+                                    text-align: right;
+                                    padding: 5px 0;
+                                    width: 50%;
+                                ">
+                            QAR {{{totalPaidAmount}}}
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid gray">
+                        <td>
+                            <p style="margin-bottom: 4px">Base Fare</p>
+                            <p style="margin-top: 4px">
+                                Total Distance {{{totalDistance}}} KM
+                            </p>
+                        </td>
+                        <td style="text-align: right">
+                            QAR {{{baseFare}}}
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid gray">
+                        <td style="padding: 10px 0">
+                            Discount Coupon {{{couponCode}}}
+                        </td>
+                        <td style="text-align: right; padding: 10px 0">
+                            QAR {{{discountedAmount}}}
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid gray">
+                        <td>
+                            <p style="margin-bottom: 0">Payment Method</p>
+                            <p style="margin: 4px 0 3px 0">Debit card</p>
+                            <!-- <p style="margin-top: 3px; font-size: 12px">PM 3:16 1/4/22</p> -->
+                        </td>
+                        <td style="text-align: right">
+                            <b style="color: #000">QAR {{{totalAmount}}}
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
-<table style="width: 100%; padding: 0 20px; color: gray">
-    <tr style="color: #000">
-        <td style="padding-top: 10px; font-size: 17px;">
-            <b>Pickup Location</b>
-        </td>
-        <td style="padding-top: 10px; font-size: 17px; text-align: right">
-            <b>Drop Off Location</b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <span style="color: #fff; background-color: gray; padding: 2px 10px; border-radius: 10px; font-size: 10px">
-                Home
-            </span>
-            <span style="font-size: 10px; margin-left: 5px">3.05 pm</span>
-        </td>
-        <td style="text-align: right">
-            <span style="color: #fff; background-color: gray; padding: 2px 10px; border-radius: 10px; font-size: 10px">
-                Home
-            </span>
-            <span style="font-size: 10px; margin-left: 5px">3.05 pm</span>
-        </td>
-    </tr>
-    <tr style="font-size: 14px">
-        <td style="width: 50%">4 Ibn Maumoun St, Doha, Qatar</td>
-        <td style="text-align: right; width: 50%">930 Ibn Mahmoud St, doha, Qatar</td>
-    </tr>
-    <tr style="font-size: 14px">
-        <td style="width: 50%">+8801475454</td>
-        <td style="text-align: right; width: 50%">+8801475454</td>
-    </tr>
-</table>
+    <table style="width: 100%; padding: 0 20px">
+        <tr>
+            <td>
+                <table style="width: 100%; border-collapse: collapse">
+                    <tr>
+                        <td style="width: 100%; padding-bottom: 5px">
+                            <b>Delivery with</b>
+                            <span style="color: gray">{{{driverName}}}</span>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid gray; color: gray">
+                        <td style="width: 100%; padding-bottom: 10px">
+                            <b style="color: #000; font-size: 13px">{{{mainPackageType}}} |</b>
+                            <span style="font-size: 12px">{{{packageType}}}
+                                <b style="color: #000">|</b></span>
+                            <span style="font-size: 12px">Total Distance: {{{totalDistance}}} KM
+                                <b style="color: #000"></b></span>
+                            <!-- <span style="font-size: 12px">Time: {{{}}} mins</span> -->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
-<p style="padding: 0 20px; text-align: center; color: gray; margin-bottom: 3px; margin-top: 50px">
-    Kadad Delivery Charges does not include fees that may be charged by your bank.
-</p>
-<p style="padding: 0 20px; text-align: center; color: gray; margin-top: 3px">
-    Please contact your bank directly for inquiries.
-</p>
-<p style="padding: 0 20px; text-align: center; font-size: 14px; font-weight: bold">
-    Thank You for using Kadad.
-</p>
-<div style="width: 100%; display: flex; margin-bottom: 10px;">
-    <div style="padding: 0 20px; width: 98%; display: flex">
-        <span style="background-color: #000; width: 100%; height: 1px"></span>
+    <table style="width: 100%; padding: 0 20px; color: gray">
+        <tr style="color: #000">
+            <td style="padding-top: 10px; font-size: 17px">
+                <b>Pickup Location</b>
+            </td>
+            <td style="
+                        padding-top: 10px;
+                        font-size: 17px;
+                        text-align: right;
+                    ">
+                <b>Drop Off Location</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="
+                            color: #fff;
+                            background-color: gray;
+                            padding: 2px 10px;
+                            border-radius: 10px;
+                            font-size: 10px;
+                        ">
+                    {{{pickAddressType}}}
+                </span>
+                <!--  <span style="font-size: 10px; margin-left: 5px"
+                        >3.05 pm</span
+                    > -->
+            </td>
+            <td style="text-align: right">
+                <span style="
+                            color: #fff;
+                            background-color: gray;
+                            padding: 2px 10px;
+                            border-radius: 10px;
+                            font-size: 10px;
+                        ">
+                    {{{dropAddressType}}}
+                </span>
+                <!-- <span style="font-size: 10px; margin-left: 5px"
+                        >3.05 pm</span
+                    > -->
+            </td>
+        </tr>
+        <tr style="font-size: 14px">
+            <td style="width: 50%">{{{pickAddress}}}</td>
+            <td style="text-align: right; width: 50%">{{{dropAddress}}}</td>
+        </tr>
+        <tr style="font-size: 14px">
+            <td style="width: 50%">{{{pickMobile}}}</td>
+            <td style="text-align: right; width: 50%">{{{dropMobile}}}</td>
+        </tr>
+    </table>
+
+    <p style="
+                padding: 0 20px;
+                text-align: center;
+                color: gray;
+                margin-bottom: 3px;
+                margin-top: 50px;
+            ">
+        Kadad Delivery Charges does not include fees that may be charged by
+        your bank.
+    </p>
+    <p style="
+                padding: 0 20px;
+                text-align: center;
+                color: gray;
+                margin-top: 3px;
+            ">
+        Please contact your bank directly for inquiries.
+    </p>
+    <p style="
+                padding: 0 20px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+            ">
+        Thank You for using Kadad.
+    </p>
+    <div style="width: 100%; display: flex; margin-bottom: 10px">
+        <div style="padding: 0 20px; width: 98%; display: flex">
+            <span style="background-color: #000; width: 100%; height: 1px"></span>
+        </div>
     </div>
-</div>
-
 </body>
+
 </html>
