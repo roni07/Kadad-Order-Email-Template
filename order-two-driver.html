@@ -17,17 +17,17 @@
                  width="161" height="161"/>
         </td>
         <td style="text-align: right; padding-right: 40px;">
-            <b>{{{order_date}}}</b>
+            <b>{{{orderDate}}}</b>
         </td>
     </tr>
 </table>
 <table style="width: 100%; padding: 20px;">
     <tr>
         <td style="padding: 10px 0;">
-            <b style="font-size: 20px;">Hi, {{{driver_name}}}</b>
+            <b style="font-size: 20px;">Hi, {{{driverName}}}</b>
             <p><b style="font-size: 20px;">Thanks for Deliver</b></p>
             <p>We hope you reach for kadad customer package</p>
-            <p style="margin-bottom: 0">safely and your order number is <b>{{{order_id}}}</b></p>
+            <p style="margin-bottom: 0">safely and your order number is <b>{{{orderId}}}</b></p>
         </td>
     </tr>
 </table>
@@ -37,7 +37,7 @@
             Total Amount You Earn
         </td>
         <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            QAR <b>{{{driver_earning}}}</b>
+            QAR <b>{{{driverEarning}}}</b>
         </td>
     </tr>
     <tr>
@@ -45,15 +45,15 @@
             Trip Fare
         </td>
         <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            QAR <b>{{{order_total_cost}}}</b>
+            QAR <b>{{{orderTotalCost}}}</b>
         </td>
     </tr>
     <tr>
         <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            Discount Coupon <b>{{{discounted_price}}}</b>
+            Discount Coupon <b>{{{couponCode}}}</b>
         </td>
         <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            QAR <b>{{{driver_earning}}}</b>
+            QAR <b>{{{driverEarning}}}</b>
         </td>
     </tr>
 </table>
@@ -63,13 +63,13 @@
             Congratualtion! You have Earn today
         </td>
         <td style="text-align: right; padding: 10px 0; font-size: 20px; width: 50%">
-            QAR <b>{{{order_total_earning}}}</b>
+            QAR <b>{{{orderTotalEarning}}}</b>
         </td>
     </tr>
     <tr>
         <td>
             <p style="margin: 0;">This is a generated Invoice/Receipt Email for Kadad Delivery Systems.</p>
-            <p style="margin-top: 5px;">Download <span style="color: red;">PDF</span></p>
+            <p style="margin-top: 5px;">Download <a href="{{{pdf}}}">PDF</a>
         </td>
     </tr>
 </table>
@@ -81,7 +81,7 @@
                     style="padding: 10px 18px; background-color: #000; border: none; color: #fff; border-radius: 6px;">
                 RATE ORDER
             </button>
-            <p style="margin-bottom: 0;">Pick Up & Deliver</p>
+            <p style="margin-bottom: 0;">{{{mainPackageType}}}</p>
         </td>
     </tr>
     <tr>
@@ -97,7 +97,7 @@
                                          alt=""/>
                                 </td>
                                 <td>
-                                    <b style="font-size: 18px; color: #808080">{{{driver_name}}}</b>
+                                    <b style="font-size: 18px; color: #808080">{{{driverName}}}</b>
                                 </td>
                             </tr>
                         </table>
@@ -107,7 +107,7 @@
                     <td>
                         <table>
                             <tr>
-                                <td>4.87</td>
+                                <td>{{{rating}}}</td>
                                 <td>
                                     <img style="height: 20px; width: 90px; margin-bottom: auto; margin-top: auto;"
                                          src="https://www.seekpng.com/png/full/104-1046661_5-star-rating-4-1-2-stars.png"
@@ -129,11 +129,11 @@
                              alt=""/>
                     </td>
                     <td style="text-align: left;">
-                        <p style="margin: 0 0 3px 10px;">Documents</p>
+                        <p style="margin: 0 0 3px 10px;">{{{packageType}}}</p>
                         <p style="margin: 3px 0 3px 10px;">Total Distance: <span
-                                style="color: #808080">{{{order_total_distance}}}</span></p>
+                                style="color: #808080">{{{orderTotalDistance}}}</span></p>
                         <p style="margin: 3px 0 0 10px;">Time: <span
-                                style="color: #808080">{{{expected_delivery_time}}}</span></p>
+                                style="color: #808080">{{{expectedDeliveryTime}}}</span></p>
                     </td>
                 </tr>
             </table>
@@ -142,7 +142,7 @@
 </table>
 
 <p style="padding: 0 20px; margin-bottom: 0; font-size: 18px;">
-    Order Number: <span style="color: #808080">{{{order_id}}}</span>
+    Order Number: <span style="color: #808080">{{{orderId}}}</span>
 </p>
 
 <table style="width: 100%; padding: 20px">
@@ -162,26 +162,26 @@
                         <h3 style="margin: 0;">Pickup Location</h3>
                         <button
                                 style="color: #ececec; border: none; background-color: gray; padding: 2px 15px; border-radius: 5px;">
-                            Home
+                            {{{pickAddressType}}}
                         </button>
-                        <p style="color: gray; margin: 5px 0;">{{{pick_address}}}</p>
-                        <p style="color: gray; margin: 5px 0;">{{{pick_mobile}}}</p>
+                        <p style="color: gray; margin: 5px 0;">{{{pickAddress}}}</p>
+                        <p style="color: gray; margin: 5px 0;">{{{pickMobile}}}</p>
 
                         <h3 style="margin-bottom: 0;">Drop off Location</h3>
                         <button
                                 style="color: #ececec; border: none; background-color: gray; padding: 2px 15px; border-radius: 5px;">
-                            Home
+                            {{{dropOneAddressType}}}
                         </button>
-                        <p style="color: gray; margin: 5px 0;">{{{drop_address}}}</p>
-                        <p style="color: gray; margin: 5px 0;">{{{drop_mobile}}}</p>
+                        <p style="color: gray; margin: 5px 0;">{{{dropOneAddress}}}</p>
+                        <p style="color: gray; margin: 5px 0;">{{{dropOneMobile}}}</p>
 
                         <h3 style="margin-bottom: 0;">Drop off Location Two</h3>
                         <button
                                 style="color: #ececec; border: none; background-color: gray; padding: 2px 15px; border-radius: 5px;">
-                            Home
+                            {{{dropTwoAddressType}}}
                         </button>
-                        <p style="color: gray; margin: 5px 0;">{{{drop_address}}}</p>
-                        <p style="color: gray; margin: 5px 0;">{{{drop_mobile}}}</p>
+                        <p style="color: gray; margin: 5px 0;">{{{dropTwoAddress}}}</p>
+                        <p style="color: gray; margin: 5px 0;">{{{dropTwoMobile}}}</p>
                     </td>
                 </tr>
             </table>
@@ -261,19 +261,31 @@
 
 <table style="width: 100%; padding: 20px;">
     <tr>
-        <td><a style="color: #000;" href="gogole.com">About Us</a></td>
+        <td>
+            <a style="color: #000;" href="https://www.kadad.com/" target="_blank"
+            rel="noopener noreferrer">
+                About Us
+            </a>
+        </td>
         <td style="text-align: right;">Partners & Partners,</td>
     </tr>
     <tr>
-        <td><a style="color: #000;" href="gogole.com">Contact Us</a></td>
+        <td><a style="color: #000;" href="https://www.kadad.com/" target="_blank"
+            rel="noopener noreferrer">Contact Us</a></td>
         <td style="text-align: right;">238 C - Ring Road,</td>
     </tr>
     <tr>
-        <td><a style="color: #000;" href="gogole.com">Privacy Policy</a></td>
+        <td>
+            <a style="color: #000;" href="https://www.kadad.com/privacy-policy/" target="_blank"
+                rel="noopener noreferrer">
+                Privacy Policy
+            </a>
+        </td>
         <td style="text-align: right;">Ground Floor,</td>
     </tr>
     <tr>
-        <td><a style="color: #000;" href="gogole.com">Terms and Condition</a></td>
+        <td><a style="color: #000;" href="https://www.kadad.com/terms-and-conditions/" target="_blank"
+            rel="noopener noreferrer">Terms and Condition</a></td>
         <td style="text-align: right;">Terms and Condition</td>
     </tr>
 </table>

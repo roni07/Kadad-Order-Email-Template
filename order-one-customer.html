@@ -9,287 +9,519 @@
 </head>
 
 <body style="margin: 0;">
-<table style="width: 100%;">
-    <tr>
-        <td>
-            <img src="https://drive.google.com/uc?export=view&id=1rcxWYF8IichPSeLXeiW7je5amF6a74vg" alt="" width="100%"
-                 height="200"/>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <b style="padding: 0 20px">{{{order_date}}}</b>
-        </td>
-    </tr>
-</table>
-<table style="width: 100%; padding: 0 20px 20px 20px;">
-    <tr>
-        <td style="padding: 10px 0;">
-            <b style="font-size: 20px;">Hi, {{{customer_name}}}</b>
-            <p><b style="font-size: 20px;">Thanks for Order</b></p>
-            <p>We hope your package delivered safely and</p>
-            <p style="margin-bottom: 0">your order number is <b>{{{order_id}}}</b></p>
-        </td>
-    </tr>
-</table>
-<table style="width: 100%; padding: 20px; background-color: #ececec;">
-    <tr>
-        <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            Total Amount You Paid
-        </td>
-        <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            QAR <b>{{{total_paid_amount}}}</b>
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            Trip Fare
-        </td>
-        <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            QAR <b>{{{order_total_cost}}}</b>
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            Discount Coupon <b>{{{discounted_price}}}</b>
-        </td>
-        <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
-            QAR <b>{{{discount_price}}}</b>
-        </td>
-    </tr>
-</table>
-<table style="width: 100%; padding: 0 20px;">
-    <tr>
-        <td style="text-align: left; padding: 10px 0 0 0; font-size: 20px; width: 50%">
-            Payment Method
-        </td>
-        <td style="text-align: right; padding: 10px 0 0 0; font-size: 20px; width: 50%">
-            QAR <b>{{{total_price}}}</b>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <td>
-                        <img src="https://drive.google.com/uc?export=view&id=1jKaa-NSbls9o2MwNPo9ahQDL2WBcRllH" alt=""
-                             width="50" height="50"/>
-                    </td>
-                    <td>
-                        <p style="margin: 0;">Debit Card</p>
-                        <p style="margin: 3px 0 0 0;">3:16 PM 22/14/1</p>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p style="margin: 0;">This is a generated Invoice/Receipt Email for Kadad Delivery Systems.</p>
-            <p style="margin-top: 5px;">Download <span style="color: red;">PDF</span></p>
-        </td>
-    </tr>
-</table>
-<table style="width: 100%; padding: 20px; background-color: #ececec;">
-    <tr>
-        <td style="font-size: 35px;">Delivery with</td>
-        <td style="text-align: right;">
-            <button style="padding: 10px 18px; background-color: #000; border: none; color: #fff; border-radius: 6px;">
-                RATE ORDER
-            </button>
-            <p style="margin-bottom: 0">Pick Up & Deliver</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <td>
-                        <table>
-                            <tr>
-                                <td>
-                                    <img style="width: 50px; height: 50px;"
-                                         src="https://drive.google.com/uc?export=view&amp;id=1wl13HuQSpKrN6CAMXYqEjwl4Mf0gThmm"
-                                         alt=""/>
-                                </td>
-                                <td>
-                                    <b style="font-size: 18px; color: #808080">{{{driver_name}}}</b>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <table>
-                            <tr>
-                                <td>4.87</td>
-                                <td>
-                                    <img style="height: 20px; width: 90px; margin-bottom: auto; margin-top: auto;"
-                                         src="https://www.seekpng.com/png/full/104-1046661_5-star-rating-4-1-2-stars.png"
-                                         alt=""/>
-                                </td>
-                                <td>Rating</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-        <td style="text-align: right;">
-            <table style="width: 100%;">
-                <tr>
-                    <td style="text-align: right; width: 75%">
-                        <img style="width: 100px; height: 70px;"
-                             src="https://i.fbcd.co/products/resized/resized-750-500/6f2345032c698b53fe63513729ebe849c89c5d8682ce78cc2e645ee5914238d6.jpg"
-                             alt=""/>
-                    </td>
-                    <td style="text-align: left;">
-                        <p style="margin: 0 0 3px 10px;">Documents</p>
-                        <p style="margin: 3px 0 3px 10px;">
-                            Total Distance: <span style="color: #808080">{{{order_total_distance}}}</span>
-                        </p>
-                        <p style="margin: 3px 0 0 10px;">
-                            Time: <span style="color: #808080">{{{expected_delivery_time}}}</span>
-                        </p>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <img src="https://drive.google.com/uc?export=view&id=1rcxWYF8IichPSeLXeiW7je5amF6a74vg" alt=""
+                    width="100%" height="200" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b style="padding: 0 20px">{{{orderDate}}}</b>
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%; padding: 0 20px 20px 20px;">
+        <tr>
+            <td style="padding: 10px 0;">
+                <b style="font-size: 20px;">Hi, {{{customerName}}}</b>
+                <p><b style="font-size: 20px;">Thanks for Order</b></p>
+                <p>We hope your package delivered safely and</p>
+                <p style="margin-bottom: 0">your order number is <b>{{{orderId}}}</b></p>
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%; padding: 20px; background-color: #ececec;">
+        <tr>
+            <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
+                Total Amount You Paid
+            </td>
+            <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
+                QAR <b>{{{totalPaidAmount}}}</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
+                Trip Fare
+            </td>
+            <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
+                QAR <b>{{{orderTotalCost}}}</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
+                Discount Coupon <b>{{{couponCode}}}</b>
+            </td>
+            <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">
+                QAR <b>{{{discountPrice}}}</b>
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%; padding: 0 20px;">
+        <tr>
+            <td style="text-align: left; padding: 10px 0 0 0; font-size: 20px; width: 50%">
+                Payment Method
+            </td>
+            <td style="text-align: right; padding: 10px 0 0 0; font-size: 20px; width: 50%">
+                QAR <b>{{{totalPrice}}}</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="https://drive.google.com/uc?export=view&id=1jKaa-NSbls9o2MwNPo9ahQDL2WBcRllH"
+                                alt="" width="50" height="50" />
+                        </td>
+                        <td>
+                            <p style="margin: 0;">Debit Card</p>
+                            <!-- <p style="margin: 3px 0 0 0;">3:16 PM 22/14/1</p> -->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="margin: 0;">This is a generated Invoice/Receipt Email for Kadad Delivery Systems.</p>
+                <p style="margin-top: 5px;">
+                    Download <a href="{{{pdf}}}">PDF</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%; padding: 20px; background-color: #ececec;">
+        <tr>
+            <td style="font-size: 35px;">Delivery with</td>
+            <td style="text-align: right;">
+                <button
+                    style="padding: 10px 18px; background-color: #000; border: none; color: #fff; border-radius: 6px;">
+                    RATE ORDER
+                </button>
+                <p style="margin-bottom: 0">{{{mainPackageType}}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img style="width: 50px; height: 50px;"
+                                            src="https://drive.google.com/uc?export=view&amp;id=1wl13HuQSpKrN6CAMXYqEjwl4Mf0gThmm"
+                                            alt="" />
+                                    </td>
+                                    <td>
+                                        <b style="font-size: 18px; color: #808080">{{{driverName}}}</b>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>{{{rating}}}</td>
+                                    <td>
+                                        <img style="height: 20px; width: 90px; margin-bottom: auto; margin-top: auto;"
+                                            src="https://www.seekpng.com/png/full/104-1046661_5-star-rating-4-1-2-stars.png"
+                                            alt="" />
+                                    </td>
+                                    <td>Rating</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align: right;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="text-align: right; width: 75%">
+                            <img style="width: 100px; height: 70px;"
+                                src="https://i.fbcd.co/products/resized/resized-750-500/6f2345032c698b53fe63513729ebe849c89c5d8682ce78cc2e645ee5914238d6.jpg"
+                                alt="" />
+                        </td>
+                        <td style="text-align: left;">
+                            <p style="margin: 0 0 3px 10px;">{{{packageType}}}</p>
+                            <p style="margin: 3px 0 3px 10px;">
+                                Total Distance: <span style="color: #808080">{{{orderTotalDistance}}}</span>
+                            </p>
+                            <p style="margin: 3px 0 0 10px;">
+                                Time: <span style="color: #808080">{{{expectedDeliveryTime}}}</span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
-<p style="padding: 0 20px; margin-bottom: 0; font-size: 18px;">
-    Order Number: <span style="color: #808080">{{{order_id}}}</span>
-</p>
+    <p style="padding: 0 20px; margin-bottom: 0; font-size: 18px;">
+        Order Number: <span style="color: #808080">{{{orderId}}}</span>
+    </p>
 
-<table style="width: 100%; padding: 20px">
-    <tr>
-        <td style="vertical-align: top; width: 50%;">
-            <table>
-                <tr>
-                    <td style="vertical-align: top">
-                        <p style="background-color: white; border-radius: 50%; height: 20px; width: 20px; border: 2px solid #f69c12; margin: 0;">
-                            &nbsp;
-                        </p>
-                        <p style="height: 100px; border-left: 2px solid #f69c12; margin: 0px 10px;">&nbsp;</p>
-                        <p style="background-color: #f69c12; height: 20px; width: 20px; margin: 0;">&nbsp;</p>
-                    </td>
-                    <td>
-                        <h3 style="margin: 0;">Pickup Location</h3>
-                        <button
+    <table style="width: 100%; padding: 20px">
+        <tr>
+            <td style="vertical-align: top; width: 50%;">
+                <table>
+                    <tr>
+                        <td style="vertical-align: top">
+                            <p
+                                style="background-color: white; border-radius: 50%; height: 20px; width: 20px; border: 2px solid #f69c12; margin: 0;">
+                                &nbsp;
+                            </p>
+                            <p style="height: 100px; border-left: 2px solid #f69c12; margin: 0px 10px;">&nbsp;</p>
+                            <p style="background-color: #f69c12; height: 20px; width: 20px; margin: 0;">&nbsp;</p>
+                        </td>
+                        <td>
+                            <h3 style="margin: 0;">Pickup Location</h3>
+                            <button
                                 style="color: #ececec; border: none; background-color: gray; padding: 2px 15px; border-radius: 5px;">
-                            Home
-                        </button>
-                        <p style="color: gray; margin: 5px 0;">{{{pick_address}}}</p>
-                        <p style="color: gray; margin: 5px 0;">{{{pick_mobile}}}</p>
+                                {{{pickAddressType}}}
+                            </button>
+                            <p style="color: gray; margin: 5px 0;">{{{pickAddress}}}</p>
+                            <p style="color: gray; margin: 5px 0;">{{{pickMobile}}}</p>
 
-                        <h3 style="margin-bottom: 0;">Drop off Location</h3>
-                        <button
+                            <h3 style="margin-bottom: 0;">Drop off Location</h3>
+                            <button
                                 style="color: #ececec; border: none; background-color: gray; padding: 2px 15px; border-radius: 5px;">
-                            Home
-                        </button>
-                        <p style="color: gray; margin: 5px 0;">{{{drop_address}}}</p>
-                        <p style="color: gray; margin: 5px 0;">{{{drop_mobile}}}</p>
-                    </td>
-                </tr>
-            </table>
-        </td>
-        <td style="text-align: right; width: 50%;">
-            <img style="height: 500px; width: 100%;"
-                 src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg"
-                 alt=""/>
-        </td>
-    </tr>
-</table>
+                                {{{dropAddressType}}}
+                            </button>
+                            <p style="color: gray; margin: 5px 0;">{{{dropAddress}}}</p>
+                            <p style="color: gray; margin: 5px 0;">{{{dropMobile}}}</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="text-align: right; width: 50%;">
+                <img style="height: 500px; width: 100%;"
+                    src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg"
+                    alt="" />
+            </td>
+        </tr>
+    </table>
 
-<table style="width: 100%; padding: 20px; background-color: #f69c12; height: 200px;">
-    <tr>
-        <td>
-            <button
+    <table style="width: 100%; padding: 20px; background-color: #f69c12; height: 200px;">
+        <tr>
+            <td>
+                <button
                     style="margin-bottom: 10px; padding: 10px 25px; background-color: #000; border: none; color: #fff; border-radius: 6px; width: 150px;">
-                Report
-            </button>
-            <button
+                    Report
+                </button>
+                <button
                     style="margin-bottom: 10px; padding: 10px 25px; background-color: #000; border: none; color: #fff; border-radius: 6px; width: 150px;">
-                My Orders
-            </button>
-        </td>
+                    My Orders
+                </button>
+            </td>
 
-        <td style="text-align: right; width: 50%;">
-            <table style="width: 100%;">
-                <tr>
-                    <td style="margin-bottom: 10px;">
-                        <span style="font-size: 25px; color: #fff">Follow Us:</span>
-                    </td>
-                    <td style="width: 50px; margin-bottom: 10px;">
-                        <img style="width: 80px; height: 80px;"
-                             src="https://drive.google.com/uc?export=view&amp;id=1x1NdW6yhuYpwhKVLBAMIs2goh91zrNF5"
-                             alt=""/>
-                    </td>
-                    <td style="width: 50px; margin-bottom: 10px;">
-                        <img style="width: 50px; height: 50px;"
-                             src="https://drive.google.com/uc?export=view&amp;id=1muvSDv4oQsPamlV5HYDISR311y_c2O4v"
-                             alt=""/>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+            <td style="text-align: right; width: 50%;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="margin-bottom: 10px;">
+                            <span style="font-size: 25px; color: #fff">Follow Us:</span>
+                        </td>
+                        <td style="width: 50px; margin-bottom: 10px;">
+                            <img style="width: 80px; height: 80px;"
+                                src="https://drive.google.com/uc?export=view&amp;id=1x1NdW6yhuYpwhKVLBAMIs2goh91zrNF5"
+                                alt="" />
+                        </td>
+                        <td style="width: 50px; margin-bottom: 10px;">
+                            <img style="width: 50px; height: 50px;"
+                                src="https://drive.google.com/uc?export=view&amp;id=1muvSDv4oQsPamlV5HYDISR311y_c2O4v"
+                                alt="" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
-<table style="width: 100%; padding: 20px">
-    <tr>
-        <td style="width: 40%;">
-            <img style="font-size: 24px; float: left;"
-                 src="https://www.kadad.com/wp-content/uploads/2021/01/kadad-icon-02.png" alt="" width="100"
-                 height="100"/>
-        </td>
-        <td style="text-align: right; width: 60%;">
-            <table style="width: 100%;">
-                <tr>
-                    <td style="width: 60px">
-                        <img style="width: 100%; height: 80px;"
-                             src="https://drive.google.com/uc?export=view&amp;id=1gecGgaCQ_08rXlbp7CBBl7zfzsPOLPbE"
-                             alt=""/>
-                    </td>
-                    <td style="width: 60px">
-                        <img style="width: 100%; height: 54px;"
-                             src="https://drive.google.com/uc?export=view&amp;id=1uwl4iN2BQhzcMSyyb6quv78ftXXrt64T"
-                             alt=""/>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+    <table style="width: 100%; padding: 20px">
+        <tr>
+            <td style="width: 40%;">
+                <img style="font-size: 24px; float: left;"
+                    src="https://www.kadad.com/wp-content/uploads/2021/01/kadad-icon-02.png" alt="" width="100"
+                    height="100" />
+            </td>
+            <td style="text-align: right; width: 60%;">
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 60px">
+                            <img style="width: 100%; height: 80px;"
+                                src="https://drive.google.com/uc?export=view&amp;id=1gecGgaCQ_08rXlbp7CBBl7zfzsPOLPbE"
+                                alt="" />
+                        </td>
+                        <td style="width: 60px">
+                            <img style="width: 100%; height: 54px;"
+                                src="https://drive.google.com/uc?export=view&amp;id=1uwl4iN2BQhzcMSyyb6quv78ftXXrt64T"
+                                alt="" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
-<div style="padding: 20px">
-    <hr/>
-</div>
+    <div style="padding: 20px">
+        <hr />
+    </div>
 
-<table style="width: 100%; padding: 20px;">
-    <tr>
-        <td><a style="color: #000;" href="gogole.com">About Us</a></td>
-        <td style="text-align: right;">Partners & Partners,</td>
-    </tr>
-    <tr>
-        <td><a style="color: #000;" href="gogole.com">Contact Us</a></td>
-        <td style="text-align: right;">238 C - Ring Road,</td>
-    </tr>
-    <tr>
-        <td><a style="color: #000;" href="gogole.com">Privacy Policy</a></td>
-        <td style="text-align: right;">Ground Floor,</td>
-    </tr>
-    <tr>
-        <td><a style="color: #000;" href="gogole.com">Terms and Condition</a></td>
-        <td style="text-align: right;">Terms and Condition</td>
-    </tr>
-</table>
+    <table style="width: 100%; padding: 20px;">
+        <tr>
+            <td>
+                <a style="color: #000;" href="https://www.kadad.com/" target="_blank"
+                rel="noopener noreferrer">
+                    About Us
+                </a>
+            </td>
+            <td style="text-align: right;">Partners & Partners,</td>
+        </tr>
+        <tr>
+            <td><a style="color: #000;" href="https://www.kadad.com/" target="_blank"
+                rel="noopener noreferrer">Contact Us</a></td>
+            <td style="text-align: right;">238 C - Ring Road,</td>
+        </tr>
+        <tr>
+            <td>
+                <a style="color: #000;" href="https://www.kadad.com/privacy-policy/" target="_blank"
+                    rel="noopener noreferrer">
+                    Privacy Policy
+                </a>
+            </td>
+            <td style="text-align: right;">Ground Floor,</td>
+        </tr>
+        <tr>
+            <td><a style="color: #000;" href="https://www.kadad.com/terms-and-conditions/" target="_blank"
+                rel="noopener noreferrer">Terms and Condition</a></td>
+            <td style="text-align: right;">Terms and Condition</td>
+        </tr>
+    </table>
 
-<img style="width: 100%; height: 200px;"
-     src="https://drive.google.com/uc?export=view&amp;id=1ezGmn5yeLICvVBHj29GvN2LzQZUsrCy1" alt=""/>
+    <img style="width: 100%; height: 200px;"
+        src="https://drive.google.com/uc?export=view&amp;id=1ezGmn5yeLICvVBHj29GvN2LzQZUsrCy1" alt="" />
 
 </body>
 
 </html>
+
+
+
+
+<!-- 
+<table style="width: 100%;">
+    <tbody>
+    <tr>
+    <td><img src="https://drive.google.com/uc?export=view&amp;id=1rcxWYF8IichPSeLXeiW7je5amF6a74vg" alt="" width="100%" height="200" /></td>
+    </tr>
+    <tr>
+    <td><strong style="padding: 0 20px;">{{{orderDate}}}</strong></td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="width: 100%; padding: 0 20px 20px 20px;">
+    <tbody>
+    <tr>
+    <td style="padding: 10px 0;"><strong style="font-size: 20px;">Hi, {{{customerName}}}</strong>
+    <p><strong style="font-size: 20px;">Thanks for Order</strong></p>
+    <p>We hope your package delivered safely and</p>
+    <p style="margin-bottom: 0;">your order number is <strong>{{{orderId}}}</strong></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="width: 100%; padding: 20px; background-color: #ececec;">
+    <tbody>
+    <tr>
+    <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">Total Amount You Paid</td>
+    <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">QAR <strong>{{{totalPaidAmount}}}</strong></td>
+    </tr>
+    <tr>
+    <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">Trip Fare</td>
+    <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">QAR <strong>{{{orderTotalCost}}}</strong></td>
+    </tr>
+    <tr>
+    <td style="text-align: left; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">Discount Coupon <strong>{{{couponCode}}}</strong></td>
+    <td style="text-align: right; padding: 10px 0; border-bottom: 1px solid; font-size: 20px;">QAR <strong>{{{discountPrice}}}</strong></td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="width: 100%; padding: 0 20px;">
+    <tbody>
+    <tr>
+    <td style="text-align: left; padding: 10px 0 0 0; font-size: 20px; width: 50%;">Payment Method</td>
+    <td style="text-align: right; padding: 10px 0 0 0; font-size: 20px; width: 50%;">QAR <strong>{{{totalPrice}}}</strong></td>
+    </tr>
+    <tr>
+    <td>
+    <table>
+    <tbody>
+    <tr>
+    <td><img src="https://drive.google.com/uc?export=view&amp;id=1jKaa-NSbls9o2MwNPo9ahQDL2WBcRllH" alt="" width="50" height="50" /></td>
+    <td>
+    <p style="margin: 0;">Debit Card</p>
+    <p style="margin: 3px 0 0 0;">3:16 PM 22/14/1</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <p style="margin: 0;">This is a generated Invoice/Receipt Email for Kadad Delivery Systems.</p>
+    <p style="margin-top: 5px;">Download <span style="color: red;">PDF</span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="width: 100%; padding: 20px; background-color: #ececec;">
+    <tbody>
+    <tr>
+    <td style="font-size: 35px;">Delivery with</td>
+    <td style="text-align: right;"><button style="padding: 10px 18px; background-color: #000; border: none; color: #fff; border-radius: 6px;"> RATE ORDER </button>
+    <p style="margin-bottom: 0;">{{{mainPackageType}}}</p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <table>
+    <tbody>
+    <tr>
+    <td>
+    <table>
+    <tbody>
+    <tr>
+    <td><img style="width: 50px; height: 50px;" src="https://drive.google.com/uc?export=view&amp;id=1wl13HuQSpKrN6CAMXYqEjwl4Mf0gThmm" alt="" /></td>
+    <td><strong style="font-size: 18px; color: #808080;">{{{driverName}}}</strong></td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <table>
+    <tbody>
+    <tr>
+    <td>{{{rating}}}</td>
+    <td><img style="height: 20px; width: 90px; margin-bottom: auto; margin-top: auto;" src="https://www.seekpng.com/png/full/104-1046661_5-star-rating-4-1-2-stars.png" alt="" /></td>
+    <td>Rating</td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    <td style="text-align: right;">
+    <table style="width: 100%;">
+    <tbody>
+    <tr>
+    <td style="text-align: right; width: 75%;"><img style="width: 100px; height: 70px;" src="https://i.fbcd.co/products/resized/resized-750-500/6f2345032c698b53fe63513729ebe849c89c5d8682ce78cc2e645ee5914238d6.jpg" alt="" /></td>
+    <td style="text-align: left;">
+    <p style="margin: 0 0 3px 10px;">{{{packageType}}}</p>
+    <p style="margin: 3px 0 3px 10px;">Total Distance: <span style="color: #808080;">{{{orderTotalDistance}}}</span></p>
+    <p style="margin: 3px 0 0 10px;">Time: <span style="color: #808080;">{{{expectedDeliveryTime}}}</span></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="padding: 0 20px; margin-bottom: 0; font-size: 18px;">Order Number: <span style="color: #808080;">{{{orderId}}}</span></p>
+    <table style="width: 100%; padding: 20px;">
+    <tbody>
+    <tr>
+    <td style="vertical-align: top; width: 50%;">
+    <table>
+    <tbody>
+    <tr>
+    <td style="vertical-align: top;">
+    <p style="background-color: white; border-radius: 50%; height: 20px; width: 20px; border: 2px solid #f69c12; margin: 0;">&nbsp;</p>
+    <p style="height: 100px; border-left: 2px solid #f69c12; margin: 0px 10px;">&nbsp;</p>
+    <p style="background-color: #f69c12; height: 20px; width: 20px; margin: 0;">&nbsp;</p>
+    </td>
+    <td>
+    <h3 style="margin: 0;">Pickup Location</h3>
+    <button style="color: #ececec; border: none; background-color: gray; padding: 2px 15px; border-radius: 5px;"> {{{pickAddressType}}} </button>
+    <p style="color: gray; margin: 5px 0;">{{{pickAddress}}}</p>
+    <p style="color: gray; margin: 5px 0;">{{{pickMobile}}}</p>
+    <h3 style="margin-bottom: 0;">Drop off Location</h3>
+    <button style="color: #ececec; border: none; background-color: gray; padding: 2px 15px; border-radius: 5px;"> {{{dropAddressType}}} </button>
+    <p style="color: gray; margin: 5px 0;">{{{dropAddress}}}</p>
+    <p style="color: gray; margin: 5px 0;">{{{dropMobile}}}</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    <td style="text-align: right; width: 50%;"><img style="height: 500px; width: 100%;" src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg" alt="" /></td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="width: 100%; padding: 20px; background-color: #f69c12; height: 200px;">
+    <tbody>
+    <tr>
+    <td><button style="margin-bottom: 10px; padding: 10px 25px; background-color: #000; border: none; color: #fff; border-radius: 6px; width: 150px;"> Report </button> <button style="margin-bottom: 10px; padding: 10px 25px; background-color: #000; border: none; color: #fff; border-radius: 6px; width: 150px;"> My Orders </button></td>
+    <td style="text-align: right; width: 50%;">
+    <table style="width: 100%;">
+    <tbody>
+    <tr>
+    <td style="margin-bottom: 10px;"><span style="font-size: 25px; color: #fff;">Follow Us:</span></td>
+    <td style="width: 50px; margin-bottom: 10px;"><img style="width: 80px; height: 80px;" src="https://drive.google.com/uc?export=view&amp;id=1x1NdW6yhuYpwhKVLBAMIs2goh91zrNF5" alt="" /></td>
+    <td style="width: 50px; margin-bottom: 10px;"><img style="width: 50px; height: 50px;" src="https://drive.google.com/uc?export=view&amp;id=1muvSDv4oQsPamlV5HYDISR311y_c2O4v" alt="" /></td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="width: 100%; padding: 20px;">
+    <tbody>
+    <tr>
+    <td style="width: 40%;"><img style="font-size: 24px; float: left;" src="https://www.kadad.com/wp-content/uploads/2021/01/kadad-icon-02.png" alt="" width="100" height="100" /></td>
+    <td style="text-align: right; width: 60%;">
+    <table style="width: 100%;">
+    <tbody>
+    <tr>
+    <td style="width: 60px;"><img style="width: 100%; height: 80px;" src="https://drive.google.com/uc?export=view&amp;id=1gecGgaCQ_08rXlbp7CBBl7zfzsPOLPbE" alt="" /></td>
+    <td style="width: 60px;"><img style="width: 100%; height: 54px;" src="https://drive.google.com/uc?export=view&amp;id=1uwl4iN2BQhzcMSyyb6quv78ftXXrt64T" alt="" /></td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <div style="padding: 20px;"><hr /></div>
+    <table style="width: 100%; padding: 20px;">
+    <tbody>
+    <tr>
+    <td><a style="color: #000;" href="gogole.com">About Us</a></td>
+    <td style="text-align: right;">Partners &amp; Partners,</td>
+    </tr>
+    <tr>
+    <td><a style="color: #000;" href="gogole.com">Contact Us</a></td>
+    <td style="text-align: right;">238 C - Ring Road,</td>
+    </tr>
+    <tr>
+    <td><a style="color: #000;" href="gogole.com">Privacy Policy</a></td>
+    <td style="text-align: right;">Ground Floor,</td>
+    </tr>
+    <tr>
+    <td><a style="color: #000;" href="gogole.com">Terms and Condition</a></td>
+    <td style="text-align: right;">Terms and Condition</td>
+    </tr>
+    </tbody>
+    </table>
+    <p><img style="width: 100%; height: 200px;" src="https://drive.google.com/uc?export=view&amp;id=1ezGmn5yeLICvVBHj29GvN2LzQZUsrCy1" alt="" /></p> -->
